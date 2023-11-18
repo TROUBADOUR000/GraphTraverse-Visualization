@@ -1,0 +1,17 @@
+.wrapper {
+  text-align: center;
+  border-bottom: 3px solid #343436;
+  background-color: #333;
+}
+table{
+  margin: auto;
+  padding: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+td{
+  border: none;
+  padding: 5px 15px;
+  background-color: #FFFF99;
+  color: #333333;
+}

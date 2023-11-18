@@ -1,0 +1,49 @@
+/* 根据你的设计风格设置选择框的背景和颜色 */
+select {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* 文本颜色 */
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px; /* 统一的内边距 */
+    width: 200px;
+    transition: border-color 0.3s, background-color 0.3s; /* 平滑过渡效果 */
+}
+
+/* 当选择框获得焦点时改变边框颜色 */
+select:focus {
+    border-color: #D1E231;
+    background-color: #FFFF99;
+    outline: none;
+}
+
+/* 下拉箭头的样式 */
+select::-ms-expand {
+    display: none; /* 隐藏IE的下拉箭头 */
+}
+select::after {
+    content: '\25BC'; /* Unicode箭头字符 */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 设置下拉选项的样式 */
+option {
+    background-color: #FFFF99;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 当鼠标悬停在选项上时改变背景颜色 */
+option:hover {
+    background-color: #FFFF99;
+    color: #D1E231;
+}
