@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2153592 胡逸凡 算法实现2</title>
+    <link rel="stylesheet" type="text/css" href="./css/click.css" />
+    <link rel="stylesheet" type="text/css" href="./css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/input.css" />
+    <link rel="stylesheet" type="text/css" href="./css/table.css" />
+    <link rel="stylesheet" type="text/css" href="./css/select.css" />
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+
+<body style="background-color: #C2F4C0;">
+<div id="input_area">
+    <p align="center">请输入图的节点个数n(2 < n <= 26)：
+        <input align="center" id="input_node_num" type="text" class="mytxt input-field" value="" autofocus /></p>
+
+    <div id="table" style="text-align:center"> </div>
+</div>
+
+<div id="select" style="display: none;"></div>
+<div id="draw_area" style="height: 500px;display: none;"></div>
+<div id="draw_area2" style="height: 150px;display: none;"></div>
+<div id="draw_area3" style="height: 150px;display: none;"></div>
+<div class="click" id="click_area">
+    <button id="adjacent_matrix" onclick="createTable(); showMatrixButtons1();">邻接矩阵</button>
+    <button id="check" onclick="checkTable(); showMatrixButtons2();" style="display: none;">输入完成</button>
+    <button id="adjacent_linked_list" onclick="show_adjacency_list();" style="display: none;">邻接链表</button>
+    <button id="_dfs" onclick="show_dfs();" style="display: none;">DFS</button>
+    <button id="_bfs" onclick="show_bfs();" style="display: none;">BFS</button>
+</div>
+
+<script src="js/echarts.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/show.js"></script>
+
+</body>
+</html>
